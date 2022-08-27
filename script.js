@@ -4,19 +4,19 @@ const API_URL = "https://jsonplaceholder.typicode.com/users";
 
 // then.catch.----------------------/
 
-fetch(API_URL)
-  .then((response) => response.json())
-  .then((result) => {
-    let findUser = result.find((user) => user.company.name === "Johns Group");
-    console.log(findUser);
-  })
-  .catch((responseError) => {
-    if ((responseError.code = 404)) {
-      console.error("Address is not found");
-    } else {
-      console.error(responseError);
-    }
-  });
+// fetch(API_URL)
+//   .then((response) => response.json())
+//   .then((result) => {
+//     let findUser = result.find((user) => user.company.name === "Johns Group");
+//     console.log(findUser);
+//   })
+//   .catch((responseError) => {
+//     if ((responseError.code = 404)) {
+//       console.error("Address is not found");
+//     } else {
+//       console.error(responseError);
+//     }
+//   });
 
 // async.await.---------------------/
 
@@ -27,8 +27,8 @@ fetch(API_URL)
 //       throw response;
 //     }
 //     const data = await response.json();
-//     let foundUser = data.find((user) => user.company.name === "Johns Group");
-//     console.log(foundUser);
+//     let findUser = data.find((user) => user.company.name === "Johns Group");
+//     console.log(findUser);
 //   } catch (responseError) {
 //     if ((responseError.code = 404)) {
 //       console.error("Address is not found");
