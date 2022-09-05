@@ -1,6 +1,6 @@
 "use strict";
 
-const API_URL = "https://jsonplaceholder.typicode.com/users";
+// const API_URL = "https://jsonplaceholder.typicode.com/users";
 
 // then.catch.----------------------/
 
@@ -27,8 +27,8 @@ const API_URL = "https://jsonplaceholder.typicode.com/users";
 //       throw response;
 //     }
 //     const data = await response.json();
-//     let findUser = data.find((user) => user.company.name === "Johns Group");
-//     console.log(findUser);
+//     let requiredUser = data.find((user) => user.company.name === "Johns Group");
+//     console.log(requiredUser);
 //   } catch (responseError) {
 //     if ((responseError.code = 404)) {
 //       console.error("Address is not found");
